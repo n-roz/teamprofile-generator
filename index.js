@@ -16,41 +16,63 @@
 // WHEN I decide to finish building my team
 // THEN I exit the application, and the HTML is generated
 
-// WHEN I start the application
-// THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
-const questions = [
-    {
-        type: 'input',
-        name: 'managerName',
-        message: 'Enter your team manager name',
-        validate: function (answer) {
-        if (answer.length < 1) {
-            return console.log("Enter your team manager name");
-        }
-        return true;
-        }
-    },
-    {
-        type: 'input',
-        name: 'employeeId',
-        message: 'Enter your employee ID'
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'Enter your email address'
-    },
-    {
-        type: 'input',
-        name: 'officeNumber',
-        message: 'Enter your office number'
-    },
-    {
-        // THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-        type: 'list',
-        name: 'license',
-        message: 'Add an engineer or intern',
-        choices: ['Engineer', 'Intern', 'none']
-    }
-];
+const inquirer = require('inquirer');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern');
+const generateHTML = require('./src/page-template');
+const { writeFile, copyFile } = require('./src/generate-site');
 
+// managers, interns, engineers
+const objEmployees = [];
+let finished = false;
+
+const main = async () => {
+    await promptManager();
+
+    while(!finished) {
+        const {choice} = await promptMain();
+        if (choice === 'Finish and generate team profile page') {
+            finished = true;
+        }
+        else if (choice === 'Add an engineer') {
+            await promptEngineer();
+        }
+        else if (choice === 'Add an intern') {
+            await promptIntern();
+        }
+    }
+
+const html = generateHTML(objEmployees);
+
+writeFile(html).then(msg => console.log(msg));
+copyFile().then(msg => console.log(msg));
+}
+
+const promptMain = async () => {
+    return inquirer.prompt([
+     {
+         type: 'list',
+         name: 'choice',
+         message: 'What would you like to do?',
+         choices: ['Add an engineer', 'Add an intern', 'Finish and generate a team profile page'],
+     }
+     ])
+}
+
+const promptManager = async () => {
+    const managerResults = await inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the team managers name?',
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log('Please enter the team managers name!');
+                    return false;
+                }
+            }
+        },
+    ])}
