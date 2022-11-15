@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/n-roz/teamprofile-generator/issues"
   },
-  "homepage": "https://github.com/n-roz/teamprofile-generator#readme"
+  "homepage": "https://github.com/n-roz/teamprofile-generator#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
