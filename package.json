@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-roz/teamprofile-generator.git"
+  },
+  "author": "Naomi Roznik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n-roz/teamprofile-generator/issues"
+  },
+  "homepage": "https://github.com/n-roz/teamprofile-generator#readme"
+}
