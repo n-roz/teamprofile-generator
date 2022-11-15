@@ -21,7 +21,7 @@
 const questions = [
     {
         type: 'input',
-        name: 'manager',
+        name: 'managerName',
         message: 'Enter your team manager name',
         validate: function (answer) {
         if (answer.length < 1) {
@@ -44,5 +44,13 @@ const questions = [
         type: 'input',
         name: 'officeNumber',
         message: 'Enter your office number'
+    },
+    {
+        // THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
+        type: 'list',
+        name: 'license',
+        message: 'Add an engineer or intern',
+        choices: ['Engineer', 'Intern', 'none']
     }
-]
+];
+
