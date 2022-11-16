@@ -1,12 +1,12 @@
-// The first class is an Employee parent class with the following properties and methods:
+// The first class is an internloyee parent class with the following properties and methods:
 // name
 // id
 // email
 // getName()
 // getId()
 // getEmail()
-// getRole() // Returns 'Employee'
-// In addition to Employee's properties and methods, Intern will also have:
+// getRole() // Returns 'internloyee'
+// In addition to internloyee's properties and methods, Intern will also have:
 // school
 // getSchool()
 // getRole() // Overridden to return 'Intern'
@@ -14,11 +14,11 @@
 const Intern = require('../lib/Intern')
 
 test('creates an Intern object', () => {
-    const emp = new Engineer ('One', '1', 'one@yahoo.com', 'UNC Charlotte');
-    expect(emp.name).toBe('One');
-    expect(emp.id).toBe('1');
-    expect(emp.email).toBe('one@yahoo.com');
-    expect(emp.school).toBe('UNC Charlotte');
+    const intern = new Intern ('One', '1', 'one@yahoo.com', 'UNC Charlotte');
+    expect(intern.name).toBe('One');
+    expect(intern.id).toBe('1');
+    expect(intern.email).toBe('one@yahoo.com');
+    expect(intern.school).toBe('UNC Charlotte');
 });
 
 test("gets school name", () => {
