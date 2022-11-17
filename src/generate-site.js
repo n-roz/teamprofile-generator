@@ -9,7 +9,7 @@ const writeFile = fileContent => {
         }
         resolve({
             ok: true,
-            message: 'Index.html created in /dist folder!'
+            message: 'Index.html created in /dist folder'
           });
         });
       });

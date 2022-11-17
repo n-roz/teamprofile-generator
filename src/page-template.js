@@ -2,7 +2,7 @@ const generateHTML = (objEmployees) => {
     
     let manager = [];
     for(let a=0;a<objEmployees.length;a++){
-        if(objEmployees[a].getRole() === 'Manager'){
+        if(objEmployees[a].getRole() === 'Manager') {
             manager = objEmployees[a];
             break;
         }
@@ -10,7 +10,7 @@ const generateHTML = (objEmployees) => {
 
     let engineerCards = '';
     for(let a=0;a<objEmployees.length;a++){
-        if(objEmployees[a].getRole() === 'Engineer'){
+        if(objEmployees[a].getRole() === 'Engineer') {
             const engineer = objEmployees[a];
             const role = objEmployees[a].getRole();
             engineerCards += `
@@ -88,7 +88,7 @@ const generateHTML = (objEmployees) => {
                 
             </div>
         </main>
-        
+
     </body>
     </html>
     `
