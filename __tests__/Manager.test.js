@@ -21,6 +21,6 @@ test('creates a Manager object', () => {
 });
 
 test("gets manager's role", () => {
-    const manager = new Manager('One', '1', 'one@yahoo.com', 'UNC Charlotte');
+    const manager = new Manager('One', '1', 'one@yahoo.com', '1234567890');
     expect(manager.getRole()).toBe('Manager');
 });

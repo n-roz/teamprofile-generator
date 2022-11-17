@@ -33,7 +33,7 @@ const main = async () => {
     while(!finished) {
         const {choice} = await promptMain();
 
-        if (choice === 'Finish and generate team profile page') {
+        if (choice === 'Finish and generate a team profile page') {
             finished = true;
         }
         else if (choice === 'Add an engineer') {
