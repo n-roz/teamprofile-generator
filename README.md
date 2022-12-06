@@ -1,7 +1,10 @@
-# Module 10 Challenge
-# Object-Oriented Programming Challenge: Team Profile Generator
+# Object-Oriented Programming: Team Profile Generator
 
 ## Description
+From the assignment:
+```
+Your challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
+```
 
 ## User Story
 ```
@@ -50,10 +53,22 @@ The recommended starting directory structure is shown below.
 ## Mock Up
 
 ## Installation
-
 In order to install ```inquirer```, please use ```npm i inquirer@8.2.4```
+Next you will need ```npm install jest --save-dev``` which saves it to ```devDependencies```.
 
+If you are cloning the project, use:
+```
+npm install
+```
+## Usage
 The application is invoked in the command line with:
 ```
 node index.js
 ```
+
+## Tests
+We use Jest to test. Enter:
+```
+npm run test
+```
+![Alt text](assets/Screen Shot 2022-12-06 at 4.46.30 PM.png "Testing")
