@@ -1,7 +1,6 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -24,5 +23,7 @@
   },
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
