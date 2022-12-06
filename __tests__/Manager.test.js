@@ -1,15 +1,3 @@
-// The first class is an managerloyee parent class with the following properties and methods:
-// name
-// id
-// email
-// getName()
-// getId()
-// getEmail()
-// getRole() // Returns 'managerloyee'
-// In addition to managerloyee's properties and methods, Manager will also have:
-// officeNumber
-// getRole() // Overridden to return 'Manager'
-
 const Manager = require('../lib/Manager')
 
 test('creates a Manager object', () => {

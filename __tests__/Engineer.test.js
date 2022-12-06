@@ -1,16 +1,3 @@
-// The first class is an engloyee parent class with the following properties and methods:
-// name
-// id
-// email
-// getName()
-// getId()
-// getEmail()
-// getRole() // Returns 'engloyee'
-// In addition to engloyee's properties and methods, Engineer will also have:
-// github // GitHub username
-// getGithub()
-// getRole() // Overridden to return 'Engineer'
-
 const Engineer = require('../lib/Engineer')
 
 test('creates an Engineer object', () => {

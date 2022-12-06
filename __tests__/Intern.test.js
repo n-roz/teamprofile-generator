@@ -1,16 +1,3 @@
-// The first class is an internloyee parent class with the following properties and methods:
-// name
-// id
-// email
-// getName()
-// getId()
-// getEmail()
-// getRole() // Returns 'internloyee'
-// In addition to internloyee's properties and methods, Intern will also have:
-// school
-// getSchool()
-// getRole() // Overridden to return 'Intern'
-
 const Intern = require('../lib/Intern')
 
 test('creates an Intern object', () => {
