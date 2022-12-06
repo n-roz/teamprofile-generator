@@ -3,7 +3,9 @@
 ## Description
 From the assignment:
 ```
-Your challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
+Your challenge is to build a Node.js command-line application that takes in information 
+about employees on a software engineering team and generates an HTML webpage that 
+displays summaries for each person.
 ```
 This project has four classes: Employee, Manager, Engineer, and Intern. The tests for these classes are in ```_tests_```.
 
