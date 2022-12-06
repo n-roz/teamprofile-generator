@@ -71,4 +71,4 @@ We use Jest to test. Enter:
 ```
 npm run test
 ```
-![Alt text](assets/Screen Shot 2022-12-06 at 4.46.30 PM.png "Testing")
+![Alt text](assets/tests.png "Testing")
