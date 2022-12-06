@@ -9,6 +9,8 @@ displays summaries for each person.
 ```
 This project has four classes: Employee, Manager, Engineer, and Intern. The tests for these classes are in ```_tests_```.
 
+[View my video submission here.](https://drive.google.com/file/d/19aAMGWpR4caj7UNGAjz91DgMJFzrByi3/view)
+
 ## User Story
 ```
 AS A manager
